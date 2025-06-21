@@ -1,0 +1,33 @@
+.carta{
+    margin: 5px;
+    position: relative;
+}
+
+.carta img {
+    width: 100px;
+    height: 100px;
+    display: block;
+    border-radius: 6px;
+    border: 2px solid #fff;
+}
+
+.carta .frente{
+    transform: rotateY(90deg);
+    transition: all ease-in 0.2s;
+    position: absolute;
+}
+
+.virarCarta .frente{
+    transform: rotateY(0deg);
+    transition-delay: 0.2s;
+}
+
+.carta .costa{
+    transition: all ease-in 0.2s;
+    transition-delay: 0.2s;
+}
+
+.virarCarta .costa{
+    transform: rotateY(90deg);
+    transition-delay: 0s;
+}
